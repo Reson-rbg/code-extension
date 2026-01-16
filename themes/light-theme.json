@@ -1,0 +1,33 @@
+{
+	"name": "Themesite Light",
+	"type": "light",
+	"colors": {
+		"editor.background": "#ffffff",
+		"editor.foreground": "#333333",
+		"activityBar.background": "#dddddd",
+		"sideBar.background": "#f3f3f3",
+		"statusBar.background": "#007acc",
+		"statusBar.foreground": "#ffffff",
+		"list.activeSelectionBackground": "#e0e0e0",
+		"list.hoverBackground": "#f0f0f0"
+	},
+	"tokenColors": [
+		{
+			"scope": [
+				"comment"
+			],
+			"settings": {
+				"foreground": "#008000"
+			}
+		},
+		{
+			"scope": [
+				"keyword",
+				"storage"
+			],
+			"settings": {
+				"foreground": "#0000ff"
+			}
+		}
+	]
+}

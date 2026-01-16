@@ -1,5 +1,6 @@
 {
   "name": "themesite",
+  "publisher": "local-user",
   "displayName": "themesite",
   "description": "这是一个尝试学习开发vscode主题插件的项目",
   "version": "0.0.1",
@@ -12,12 +13,44 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "themes": [
+      {
+        "label": "Themesite Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-theme.json"
+      },
+      {
+        "label": "Themesite Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-theme.json"
+      }
+    ],
     "commands": [
       {
-        "command": "themesite.helloWorld",
-        "title": "Hello World"
+        "command": "themesite.applyTheme",
+        "title": "Themesite: Force Update Theme Logic"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Themesite Configuration",
+      "properties": {
+        "themesite.dayTheme": {
+          "type": "string",
+          "default": "Themesite Light",
+          "description": "The theme to use during the day (6 AM - 6 PM)."
+        },
+        "themesite.nightTheme": {
+          "type": "string",
+          "default": "Themesite Dark",
+          "description": "The theme to use during the night (6 PM - 6 AM)."
+        },
+        "themesite.autoSwitch": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic theme switching based on time."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",

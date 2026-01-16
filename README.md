@@ -1,71 +1,25 @@
-# themesite README
+# Themesite
 
-This is the README for your extension "themesite". After writing up a brief description, we recommend including the following sections.
+Themesite 是一个包含日夜自动切换功能的 VS Code 主题插件。
 
-## Features
+## 功能特性
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+*   **自动日夜切换**：根据时间（早上6点至晚上6点）自动在深色和浅色主题间切换。
+*   **深色主题 (Themesite Dark)**：专为夜间编程设计的深色配色，拥有清晰的语法高亮。
+*   **浅色主题 (Themesite Light)**：适合白天使用的护眼浅色配色。
 
-For example if there is an image subfolder under your extension project workspace:
+## 扩展设置
 
-\!\[feature X\]\(images/feature-x.png\)
+本插件提供以下配置项：
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+*   `themesite.autoSwitch`: 开启/关闭自动切换功能 (默认: true)
+*   `themesite.dayTheme`: 白天使用的主题 (默认: "Themesite Light")
+*   `themesite.nightTheme`: 晚上使用的主题 (默认: "Themesite Dark")
 
-## Requirements
+## 使用方法
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+安装插件后，插件会自动根据当前时间设置主题。你也可以通过命令面板 (`Ctrl+Shift+P`) 运行以下命令手动触发：
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+*   `Themesite: Force Update Theme Logic`
 
 **Enjoy!**
